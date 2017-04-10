@@ -4,6 +4,6 @@
 @section('content')
 
 
-<h1>Welcome to Home</h1>
+<h1 class="hello">Welcome to Home</h1>
 
 @endsection
