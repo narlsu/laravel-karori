@@ -43,9 +43,25 @@
 @import "components/date_picker/default.date";
 @import "components/date_picker/default.time";
 
-h1 {
-	font-size: 10px;
+
+
+// Card Styling
+// .card {
+// 	background-color: #FFF;
+// 	box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+// 	box-shadow: 0px 7px 22px 0px rgba(0, 0, 0, 0.2);
+// 	padding: 20px 10px;
+// }
+body{
+	width: 100%;
 }
-.hello {
-	font-size: 10px;
+#mobile {
+	z-index: 10000;
+}
+h1 {
+	color: blue;
+}
+.card-panel{
+	padding: 25px !important;
+	background-color: blue;
 }
