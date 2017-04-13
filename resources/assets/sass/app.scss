@@ -55,13 +55,74 @@
 body{
 	width: 100%;
 }
-#mobile {
-	z-index: 10000;
+.card-panel{
+	padding: 25px !important;
 }
+.margin {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.block {
+	display: block;
+	
+}
+.flex-container-foot {
+	background-color: #d32f2f;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.foot-child-cont {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+.footer-item-margin {
+	margin: 13px;
+}
+.black-anchor {
+	color: black;
+}
+
 h1 {
 	color: blue;
 }
-.card-panel{
-	padding: 25px !important;
-	background-color: blue;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
