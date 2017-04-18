@@ -2,7 +2,9 @@
 		<nav>
 			<div  class="nav-wrapper">
 				<a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-				<a href="#" class="brand-logo">Logo</a>
+				<div>
+					<a href="#" class="brand-logo"><img class="hide-on-med-and-down" src="images/desktoplogo.png" alt="Karori Food Co-Op logo."><img class="moblogo hide-on-large-only" src="images/mobilelogo.png"></a>
+				</div>
 				<ul  class="right hide-on-med-and-down">
 					<li><a href="/">Home</a></li>
 					<li><a href="/about">About</a></li>

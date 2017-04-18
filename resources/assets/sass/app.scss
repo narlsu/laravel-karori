@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: brandon;
+    src: url('/fonts/brandon/Brandon_bld.otf');
+}
 // Mixins
 // @import "components/prefixer";
 @import "components/mixins";
@@ -64,9 +68,9 @@ body{
 	display: block;
 }
 .block {
-	display: block;
-	
+	display: block;	
 }
+// Footer
 .flex-container-foot {
 	background-color: #d32f2f;
 	display: -webkit-flex;
@@ -91,15 +95,34 @@ body{
 .black-anchor {
 	color: black;
 }
-
-h1 {
-	color: blue;
+.fblogo {
+	width: 20px;
+	height: 20px;
 }
-
-
-
-
-
+// Header Logo
+.moblogo {
+	margin-top: 13px;
+}
+// Hamburger Colour
+.material-icons {
+	color: black;
+}
+ul {
+	li{
+		a{
+			color: black;
+		}
+	}
+}
+// Medium and up
+ @media #{$medium-and-up} {
+    .moblogo {
+    	margin-top: 18px;
+    }
+  }
+h1,h2,h3,h4 {
+	font-family: 'brandon';
+}
 
 
 
