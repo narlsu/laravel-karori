@@ -14,10 +14,11 @@
 	
 	<div class="carousel carousel-slider valign-wrapper center" data-indicators="true">
 	    <div class="carousel-fixed-item center">
-	    	<h1 class="valign white-text">Welcome to the Karori Food Co-op</h1>
+	    	<h1 class="header-text valign white-text">Welcome to the Karori Food Co-op</h1>
 	    	<a class="btn waves-effect white grey-text darken-text-2">button</a>
 	    </div>
-	    <div class="carousel-item red white-text" href="#one!">
+	    <div href="#one!">
+	    	<img class="img-responsive carousel-item" src="images/lemonhead.jpg" alt="lemons">
 	    </div>
 	    <div class="carousel-item amber white-text" href="#two!">
 	    </div>
