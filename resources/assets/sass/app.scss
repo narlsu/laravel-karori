@@ -102,6 +102,7 @@ body{
 // Header Logo
 .moblogo {
 	margin-top: 13px;
+	margin-left: 20px;
 }
 // Hamburger Colour
 .material-icons {
@@ -110,7 +111,10 @@ body{
 ul {
 	li{
 		a{
-			color: black;
+			color: #8bc53f;
+			font-family: 'brandon';
+			font-size: 1.2em;
+			text-transform: uppercase;
 		}
 	}
 }
@@ -123,11 +127,65 @@ ul {
 h1,h2,h3,h4 {
 	font-family: 'brandon';
 }
-
 .header-text  {
   text-shadow: 0px 0px 8px #000000;
+  position: relative;
+  top: -30px;
+  left: 0;
 }
+.desktop-contain {
+	background-color: #ffffff;
+	box-shadow: 0px 7px 22px 0px rgba(0, 0, 0, 0.2);
+}
+// Background Header Images
+.c-style {
+	margin: auto;
+	height: auto;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.background-image1 {
+	background-image: url(../images/background/lemonhead.jpg);
+}
+.background-image2 {
+	background-image: url(../images/background/cutvege.jpg);
+}
+.background-image3 {
+	background-image: url(../images/background/pomhead.jpg);
+}
+.background-image4 {
+	background-image: url(../images/background/cabbagehead.jpg);
+}
+// Container for desktop
+@media #{$extra-large-and-up} {
+    /*// styles for extra large screens and up*/
+    .desktop-background {
+    	display: -webkit-flex;
+    	display: -moz-flex;
+    	display: -ms-flex;
+    	display: -o-flex;
+    	display: flex;
+    	width: 100%;
+    	justify-content: center;
+    	background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    height: 100%;
 
+    }
+	.desktop-contain {
+		width: 80%;
+	}
+	nav {
+		width: 80%;
+	}
+  }
+/*Desktop Background*/
+.desktop-background {
+	background-image: url(../images/background/deskback.jpg);
+}
 
 
 
