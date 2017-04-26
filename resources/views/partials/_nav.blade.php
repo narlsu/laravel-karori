@@ -10,7 +10,7 @@
 					<li><a href="/about">About</a></li>
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="/recipes">Recipes</a></li>
-					<li><a href="/signup">Sign Up</a></li>
+					<li><a href="/register">Sign Up</a></li>
 					<li><a href="/login">Login</a></li>
 					<!-- Logged in / admin only features -->
 					<!-- <li><a href="#">Logout</a></li>

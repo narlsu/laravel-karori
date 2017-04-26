@@ -20,3 +20,7 @@ Route::get('welcome', function () {
 Route::get('contact',	'ContactController@index');
 Route::get('recipes',	'RecipesController@index');
 
+
+Auth::routes();
+
+Route::get('/account', 'AccountController@index');
