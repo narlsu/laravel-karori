@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: brandon;
+    font-family: 'brandon';
     src: url('/fonts/brandon/Brandon_bld.otf');
 }
 // Mixins
@@ -206,10 +206,6 @@ h1,h2,h3,h4 {
 .desktop-background {
 	background-image: url(../images/background/deskback.jpg);
 }
-h1,h2,h3 {
-	font-family: 'futura';
-}
-
 
 
 
