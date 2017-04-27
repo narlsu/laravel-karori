@@ -6,7 +6,7 @@
         <div>
             <div>
                 <div>Login</div>
-                <div>
+                <div class="card">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 

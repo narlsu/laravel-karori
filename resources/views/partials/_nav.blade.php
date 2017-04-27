@@ -3,7 +3,7 @@
 			<div  class="nav-wrapper">
 				<a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 				<div>
-					<a href="#" class="brand-logo"><img class="moblogo" src="images/mobilelogo.png"></a>
+					<a href="#" class="brand-logo"><img class="moblogo" src="/images/mobilelogo.png"></a>
 				</div>
 				<ul  class="right hide-on-med-and-down">
 					<li><a href="/">Home</a></li>

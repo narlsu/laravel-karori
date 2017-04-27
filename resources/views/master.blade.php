@@ -39,12 +39,14 @@
 					<a class="black-anchor footer-item-margin" href="www.facebook.com"><img class="fblogo" src="images/facebooklogo.svg" alt="facebook page link"></a>
 					<p class="hide-on-small-only">Follow us on Facebook!</p>
 				</div>
+
 				<div class="foot-child-cont">
 					<a class="black-anchor footer-item-margin" href="/contact">
 						<i class="material-icons">email</i>
 					</a>
 					<p class="hide-on-small-only">Any questions? Message Us.</p>
 				</div>
+				
 		</footer>
 	</div>
 </div>
