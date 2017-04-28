@@ -36,7 +36,7 @@
 		{{-- Flex Footer --}}
 		<footer class="flex-container-foot">
 				<div class="foot-child-cont">
-					<a class="black-anchor footer-item-margin" href="www.facebook.com"><img class="fblogo" src="images/facebooklogo.svg" alt="facebook page link"></a>
+					<a class="black-anchor footer-item-margin" href="www.facebook.com"><img class="fblogo" src="/images/facebooklogo.svg" alt="facebook page link"></a>
 					<p class="hide-on-small-only">Follow us on Facebook!</p>
 				</div>
 
