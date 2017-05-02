@@ -54,7 +54,6 @@
  <!-- Javascript Linked -->
 <script type="text/javascript" src="/js/materialize.min.js"></script>
 <script type="text/javascript" src="/js/called.js"></script>
-
 @yield('scripts')
 
 </html>

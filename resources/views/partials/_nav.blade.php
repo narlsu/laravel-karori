@@ -7,7 +7,6 @@
 				</div>
 				<ul  class="right hide-on-med-and-down">
 					<li><a href="/">Home</a></li>
-					<li><a href="/about">About</a></li>
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="/recipes">Recipes</a></li>
 					<li><a href="/register">Sign Up</a></li>
@@ -23,7 +22,6 @@
 			</div>
 			<ul class="side-nav" id="mobile">
 				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
 				<li><a href="/contact">Contact</a></li>
 				<li><a href="/recipes">Recipes</a></li>
 				<li><a href="/signup">Sign Up</a></li>

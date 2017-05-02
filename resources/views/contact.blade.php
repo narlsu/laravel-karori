@@ -22,10 +22,23 @@
 		</div>
 	<h1 class="center-align">Location</h1>
 
-	<div class="col s4 m8 l8">
-		<p>Here is where the crates are picked up from</p>
-		<!-- Google Maps -->
-		<div class="gmap">This is a gmap</div>
+	<div class="card-panel col s10 offset-s1 m8 offset-m2 l8 offset-l2 map-cont">
+		<p class="center-align">Here is where the sorting warehouse and crate pickup is located.</p>
+		<div id="karori-map" class="col s4 m8 l8">
+			<p>Here is where the crates are picked up from</p>
+			<!-- Google Maps -->
+		<div >
+	</div>	
+	</div>
+
+	
+
+
+
+    <script src="/js/karori-map.js" type="text/javascript"></script>
+    
+   	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8MEcqwg8-qEG60a6VxxccXAy2Iglq7w&callback=initMap"
+  type="text/javascript"></script>
 	</div>
 </div>
 

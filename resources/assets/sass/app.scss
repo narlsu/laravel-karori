@@ -72,13 +72,17 @@ body{
 }
 // Footer
 .flex-container-foot {
-	background-color: #d32f2f;
+	background-color: #f7f7f7;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	justify-content: space-around;
+	/*Might not use this box shadow*/
+	/*box-shadow:  0px -2px 7px  rgba(0, 0, 0, 0.15);*/
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+
 	// align-items: center;
 }
 .foot-child-cont {
@@ -220,9 +224,13 @@ h1,h2,h3,h4 {
 .login-label {
 	font-size: 1.2em;
 }
-
-
-
+#karori-map {
+	width: 100%;
+	height: 500px;
+}
+.map-cont {
+	margin-bottom: 100px;
+}
 
 
 
