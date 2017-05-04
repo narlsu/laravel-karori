@@ -16,17 +16,17 @@
 				{{-- last Name --}}
 				<div>
 					<label for="lastname" class="login-label">Last name</label>
-					<input id="lastname" type="text" class="center-align" value="{{ old('name') }}" required autofocus>
+					<input id="lastname" type="text" class="center-align" value="{{ old('lastname') }}" required autofocus>
 				</div>
 				{{-- Phone Number --}}
 				<div>
 					<label for="phonenumber" class="login-label">Phone Number</label>
-					<input id="phonenumber" type="number" class="center-align" value="{{ old('name') }} " required autofocus>
+					<input id="phonenumber" type="number" class="center-align" required autofocus>
 				</div>
 				{{-- Email --}}
-				<div class="">
+				<div {{ $errors->has('email') ? ' has-error' : '' }}>
 					<label for="email" class="login-label">E-Mail Address</label>
-					<input id="name" type="text" name="name" class="center-align" value="{{ old('name') }}" required autofocus>
+					<input id="name" type="text" name="name" class="center-align" value="{{ old('email') }}" required autofocus>
 				</div>
 				{{-- Password --}}
 				<div class="">

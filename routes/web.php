@@ -18,7 +18,7 @@ Route::get('welcome', function () {
 });
 
 Route::get('contact',	'ContactController@index');
-Route::get('recipes',	'RecipesController@index');
+Route::resource('recipes',	'RecipesController');
 
 
 Auth::routes();

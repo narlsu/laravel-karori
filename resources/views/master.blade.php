@@ -6,6 +6,11 @@
 	<title>@yield('title')</title>
 	<link rel="stylesheet" type="text/css" href="/css/app.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <script>
+        window.Laravel = {!! json_encode([
+            'csrfToken' => csrf_token(),
+        ]) !!};
+    </script>
 </head>
 <body>
 	<div class="desktop-background">	
@@ -36,7 +41,8 @@
 		{{-- Flex Footer --}}
 		<footer class="flex-container-foot">
 				<div class="foot-child-cont">
-					<a class="black-anchor footer-item-margin" href="www.facebook.com"><img class="fblogo" src="/images/facebooklogo.svg" alt="facebook page link"></a>
+					<a class="black-anchor footer-item-margin" href="www.facebook.com">
+						<img class="fblogo" src="/images/facebooklogo.svg" alt="facebook page link"></a>
 					<p class="hide-on-small-only">Follow us on Facebook!</p>
 				</div>
 
@@ -50,7 +56,7 @@
 		</footer>
 	</div>
 </div>
- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
  <!-- Javascript Linked -->
 <script type="text/javascript" src="/js/materialize.min.js"></script>
 <script type="text/javascript" src="/js/called.js"></script>
