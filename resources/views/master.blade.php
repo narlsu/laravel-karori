@@ -6,11 +6,6 @@
 	<title>@yield('title')</title>
 	<link rel="stylesheet" type="text/css" href="/css/app.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	    <script>
-        window.Laravel = {!! json_encode([
-            'csrfToken' => csrf_token(),
-        ]) !!};
-    </script>
 </head>
 <body>
 	<div class="desktop-background">	
