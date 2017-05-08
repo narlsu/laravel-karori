@@ -14,10 +14,15 @@
 					<li><a href="{{ route('register') }}">Sign Up</a></li>
 					<li><a href="{{ route('login') }}">Login</a></li>
 					@else 
-					<li><a href="{{ route('logout') }}"
+					<li>
+	                    <a href="{{ route('logout') }}"
 	                        onclick="event.preventDefault();
 	                                 document.getElementById('logout-form').submit();">
 	                        Logout
+	                    </a>
+	                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
                     </li>
                     @endif
 					<!-- Logged in / admin only features -->
@@ -37,10 +42,15 @@
 				<li><a href="{{ route('register') }}">Sign Up</a></li>
 				<li><a href="{{ route('login') }}">Login</a></li>
 				@else
-				<li><a href="{{ route('logout') }}"
-	                    onclick="event.preventDefault();
-	                             document.getElementById('logout-form').submit();">
-	                    Logout
+				<li>
+	                    <a href="{{ route('logout') }}"
+	                        onclick="event.preventDefault();
+	                                 document.getElementById('logout-form').submit();">
+	                        Logout
+	                    </a>
+	                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
                 </li>
                 @endif
 

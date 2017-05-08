@@ -21,7 +21,7 @@
 				{{-- First Name --}}
 				<div>
 					<label for="firstname" class="login-label" >First Name</label>
-					<input id="firstname" type="text" class="center-align" name="firstname" value="{{ old('name') }}"  autofocus>
+					<input id="firstname" type="text" class="center-align" name="firstname" value="{{ old('firstname') }}"  autofocus>
 				</div>
 				{{-- last Name --}}
 				<div>
