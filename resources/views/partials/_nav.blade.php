@@ -15,6 +15,7 @@
 					<li><a href="{{ url('/login') }}">Login</a></li>
 					@else
 					<li><a href="{{ url('/account')}}">Account</a></li>
+					<li><a href="{{ url('/admin')}}">Admin</a></li>
 					<li>
 	                    <a href="{{ url('logout') }}"
 	                        onclick="event.preventDefault();

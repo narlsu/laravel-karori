@@ -25,3 +25,4 @@ Route::get('account',	'AccountController@index');
 Auth::routes();
 
 Route::get('/account', 'AccountController@index');
+Route::get('/admin', 'AdminController@index');

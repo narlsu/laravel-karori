@@ -20,15 +20,15 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->integer('phonenumber');
             $table->string('password');
-            $table->enum('privilege_type', [
-                'superadmin', 
-                'admin', 
-                'moderator', 
-                'registered_user',
-                'user',
-                'banned']);
+            // $table->enum('privilege_type', [
+            //     'superadmin', 
+            //     'admin', 
+            //     'moderator', 
+            //     'registered_user',
+            //     'user',
+            //     'banned']);
 
-            $table->enum('user_type', ['worker', 'buyer', 'customer']);
+            // $table->enum('user_type', ['worker', 'buyer', 'customer']);
             $table->rememberToken();
             $table->timestamps();
         });
