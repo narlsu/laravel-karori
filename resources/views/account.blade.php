@@ -7,7 +7,7 @@
 	<h1>Account</h1>
 
 	<div class="card">
-		<h1>Update Details</h1>\
+		<h1>Update Details</h1>
 		{{-- Email --}}
 		{{-- Phone Number --}}
 		{{-- First Name --}}
