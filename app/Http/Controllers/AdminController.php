@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Controllers\User;
+use App\User;
+use App\Role;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
@@ -15,11 +16,10 @@ class AdminController extends Controller
     public function index()
     {
     
-        $users = DB::table('users')->get();
-
+        $users = User::all();
         return view('admin', ['users' => $users]);
-    
     }
+    
 
     /**
      * Show the form for creating a new resource.
