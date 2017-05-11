@@ -18,18 +18,17 @@
 					<td>{{ $user->email }}<input type="hidden" name="email" value="{{ $user->email }}"></td>
                     
 					<td>
-                        <input type="checkbox" id="user" {{ $user->hasRole('User') ? 'checked' :'' }} name="role_user" >
+                        {{-- <input type="checkbox" id="user" {{ $user->hasRole('User') ? 'checked' :'' }} name="role_user" > --}}
                         <label for="user"></label>
                     </td>
                     
-                    
-					<td><input type="checkbox" id="user" {{ $user->hasRole('Author') ? 'checked' :'' }} name="role_author" >
+					<td>
+                        {{-- <input type="checkbox" id="user" {{ $user->hasRole('Author') ? 'checked' :'' }} name="role_author" > --}}
                         <label for="author"></label>
                     </td>
                     
-                    
 					<td>
-                        <input type="checkbox" id="admin" {{ $user->hasRole('Admin') ? 'checked' :'' }} name="role_admin" >
+                        {{-- <input type="checkbox" id="admin" {{ $user->hasRole('Admin') ? 'checked' :'' }} name="role_admin" > --}}
                         <label for="admin"></label>
                     </td>
 					{{ csrf_field() }}
