@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="background-image container">
-	@if (Auth::user()->hasRole('admin'))
+	@if (Auth::Check() && Auth::user()->hasRole('admin'))
 		<h2>You are now logged in as an admin</h2>
 	@endif
 	<h1 class="center-align">About Us</h1>
@@ -33,7 +33,7 @@
         </div>
 
         <div class="row">
-            @if( Auth::user()->hasRole('admin') )
+            @if ( Auth::Check() && Auth::user()->hasRole('admin') )
                 <div class="col-sm-3">
                     <div class="panel panel-default">
                         <div class="panel-heading">You're an Admin</div>
@@ -44,7 +44,7 @@
                 </div>
             @endif
 
-            @if( Auth::user()->hasRole('meeting manager') )
+            @if(Auth::Check() && Auth::user()->hasRole('meeting manager') )
                 <div class="col-sm-3">
                     <div class="panel panel-default">
                         <div class="panel-heading">You're a Meeting Manager</div>
@@ -55,7 +55,7 @@
                 </div>
             @endif
 
-            @if( Auth::user()->can('modify user accounts') )
+            @if( Auth::Check() && Auth::user()->can('modify user accounts') )
                 <div class="col-sm-3">
                     <div class="panel panel-default">
                         <div class="panel-heading">You can Modify User Accounts</div>
