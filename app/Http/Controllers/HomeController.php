@@ -24,6 +24,10 @@ class HomeController extends Controller
 
     public function modifyAccounts()
     {
+        // Roles List
+        Role::create(['name' => 'verified user']);
+        // Permissions List
+        // List all permissions here
         $allUsers = User::all();
 
         return view('modify-accounts', compact('allUsers'));
