@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 
 class HomeController extends Controller
 {
@@ -26,7 +27,10 @@ class HomeController extends Controller
     {
         // Roles List
         Role::create(['name' => 'verified user']);
+        Permission::create(['name' => 'edit_articles']);
+        Permission::create(['name' => 'custom_crate']);
         // Permissions List
+        // $user->givePermissionTo('edit articles');
         // List all permissions here
         $allUsers = User::all();
 

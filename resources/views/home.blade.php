@@ -3,7 +3,7 @@
 @section('title', 'Home')
 @section('content')
 
-<div class="background-image container">
+<div class="background-image container center-align">
 	@if (Auth::Check() && Auth::user()->hasRole('admin'))
 		<h2>You are now logged in as an admin</h2>
 	@endif
@@ -28,12 +28,13 @@
 
 
     <div class="container">
-        <div class="page-header">
-            <h1>Control Panel</h1>
-        </div>
+
 
         <div class="row">
             @if ( Auth::Check() && Auth::user()->hasRole('admin') )
+                <div class="page-header">
+                    <h1 class="center-align">Control Panel</h1>
+                </div>
                 <div class="col-sm-3">
                     <div class="panel panel-default">
                         <div class="panel-heading">You're an Admin</div>

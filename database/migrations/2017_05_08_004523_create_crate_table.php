@@ -13,12 +13,21 @@ class CreateCrateTable extends Migration
      */
     public function up()
     {
-        Schema::create('crate', function (Blueprint $table) {
+        Schema::create('crates', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
-            $table->enum('weekly_crate', ['yes', 'no']);
-            $table->enum('custom_crate', ['yes', 'null']);
+
+            $table->boolean('weekly_crate')->default(false);
+            $table->boolean('custom_crate')->default(false);
             $table->text('custom_crate_text');
+            $table->integer('users_id')->unsigned();
+
+            $table  ->foreign('users_id')
+                    ->references('id')
+                    ->on('users')
+                    ->onDelete('cascade')
+                    ->onUpdate('cascade');
+
+            $table->timestamps();
         });
     }
 
@@ -29,6 +38,6 @@ class CreateCrateTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('crate');
+        Schema::dropIfExists('crates');
     }
 }

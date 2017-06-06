@@ -182,6 +182,28 @@ h1,h2,h3,h4 {
 .background-image4 {
 	background-image: url(../images/background/cabbagehead.jpg);
 }
+
+@media #{$small-and-down} {
+	// styles for small screens and down
+	h2 {
+		font-size: 2em;
+	}
+	.post-heading {
+		width: 100%;
+	}
+}
+@media #{$medium-and-up} {
+	// styles for medium screens and larger
+	h2 {
+		font-size: 2em;
+	}
+}
+@media #{$medium-and-down} {
+	// styles for medium screens and down
+}
+@media #{$large-and-up} {
+	// styles for large screens and up
+}
 // Container for desktop
 @media #{$extra-large-and-up} {
     /*// styles for extra large screens and up*/
@@ -231,11 +253,47 @@ h1,h2,h3,h4 {
 .map-cont {
 	margin-bottom: 100px;
 }
+// File field for Recipes create form
+.file-style {
+	height: 100px;
 
+}
+// Individual posts styling
+.post-content-contain {
+	width: 80%;
+}
+.image-size {
+	max-width: 100%;
+	width: 300px;
 
-
-
-
+}
+.post-heading {
+	position: absolute;
+	top: calc(50% - 40px);
+	z-index: 5;
+	width: 100%;
+}
+// Recipes page post styling
+.art-style {
+	position: relative;
+ 	height: 100%;
+ 	width: 300px;
+}
+.no-display {
+	display: none;
+}
+// featured Recipe Post
+.post-image {
+	width: 100%;
+}
+// Recipe Delete and Edit
+.disp-flex {
+	display: flex;
+	justify-content: center;
+}
+.button-cont {
+	padding: 25px;
+}
 
 
 

@@ -17,7 +17,11 @@
 			<div class="carousel carousel-slider valign-wrapper center" data-indicators="true">
 			    <div class="carousel-fixed-item center">
 			    	<h1 class="header-text white-text">Welcome to the Karori Food Co-op</h1>
-			    	<a class="btn waves-effect white grey-text darken-text-2">button</a>
+			    	@if (Auth::guest())
+			    		<a href="{{ url('/register') }}" class="btn waves-effect white grey-text darken-text-2">Sign Up Today!</a>
+			    	@else
+			    		<a href="{{ url('/crate') }}" class="btn waves-effect white grey-text darken-text-2">Go to your Crate</a>
+			    	@endif
 			    </div>
 			    <div class="background-image1 carousel-item c-style" href="#one!">
 			    </div>

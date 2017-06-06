@@ -4,7 +4,8 @@
 @section('content')
 
 <div class="background-image">
-	<h1>Account</h1>
+	<h1 class="center-align">Account</h1>
+	<p class="center-align">Welcome to the Karori food Co-op! Be sure to check to check out the Crate page where you sign up and manage your food crate for this week!</p>
 
 	<div class="card">
 		<h1>Update Details</h1>

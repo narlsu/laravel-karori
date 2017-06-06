@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Http\Controllers\RecipesController;
 
 class CreateRecipesTable extends Migration
 {
@@ -17,7 +18,7 @@ class CreateRecipesTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('title');
-            $table->string('description');
+            $table->text('description');
             $table->string('image');
         });
     }

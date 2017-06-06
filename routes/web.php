@@ -26,7 +26,7 @@ Auth::routes();
 
 Route::get('/account', 'AccountController@index');
 // Route::get('/admin', 'AdminController@index');
-
+Route::resource('/crate', 'CrateController');
 
 
 // ADMIN ROLES ONLY
@@ -38,7 +38,22 @@ Route::group(['middleware' => ['mustHaveRole:admin']], function () {
 Route::group(['middleware' => ['mustHaveRole:meeting manager']], function () {
     Route::get('/home/meeting', 'HomeController@meeting');
 });
+// PASSWORD RESET
+Route::get('/changepassword', function(){
+	return view('auth.changepassword');
+});
+Route::post('change/password', function(){
+	$User = user::find(Auth::user()->id);
 
+	if(Hash::check(Input::get('passwordold'), $User['password']) && Input::get('password') == Input::get('password_confirmation')){
+		$User->password = bcrypt(Input::get('password'));
+		$User->save();
+		return back()->with('success','Password Changed');
+	} else {
+		return back()->with('error','Password NOT Changed');
+	}
+
+});
 // ANYONE WITH PERMISSION ONLY
 Route::group(['middleware' => ['mustHavePermission:modify user accounts']], function () {
 	Route::get('/home/modify-accounts', 'HomeController@modifyAccounts');
@@ -48,5 +63,5 @@ Route::group(['middleware' => ['mustHavePermission:modify user accounts']], func
 });
 
 Auth::routes();
-
+// curl.cainfo = "C:/xampp/apache/bin/curl-ca-bundle.crt"
 // Route::get('/home', 'HomeController@index')->name('home');
