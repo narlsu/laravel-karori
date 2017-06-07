@@ -47,7 +47,7 @@
 @import "components/date_picker/default.date";
 @import "components/date_picker/default.time";
 
-
+$primary-color: color #8bc53f !default;
 
 // Card Styling
 // .card {
@@ -268,8 +268,9 @@ h1,h2,h3,h4 {
 
 }
 .post-heading {
-	position: absolute;
-	top: calc(50% - 40px);
+	color: black;
+	// position: absolute;
+	// top: calc(50% - 40px);
 	z-index: 5;
 	width: 100%;
 }
@@ -294,10 +295,21 @@ h1,h2,h3,h4 {
 .button-cont {
 	padding: 25px;
 }
+h2 {
+	margin-top: 17px;
+}
+.image-hold {
+	width: 300px;
+	padding-bottom: 10px;
+	background-color: #e6e6e6;
 
-
-
-
+}
+.centered {
+	text-align: center;
+}
+.card-contain {
+	margin-bottom: 25px;
+}
 
 
 

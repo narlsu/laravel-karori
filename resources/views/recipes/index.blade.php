@@ -21,12 +21,17 @@
 
 			<article class="art-style col s12 m6 l4">
 				<a href="/recipes/{{ $post->id }}">
-					<div class="card-contain card center-align">
-						<img class="image-size" src="/images/recipes/thumbnails/{{ $post->image }}" alt="{{ $post->alt_text}}">
-						<h2 class="post-heading center-align">{{ $post->title }}</h2>
+					<div class="card-contain center-align center-cont">
+						<div class="image-hold center-block">
+							<img class="image-size" src="/images/recipes/thumbnails/{{ $post->image }}" alt="{{ $post->alt_text}}">
+							<div class="center-block">
+							<h2 class="post-heading center-block">{{ $post->title }}</h2>
+							<small class="centered">Written {{ \Carbon\Carbon::parse($post->created_at)->diffForHumans() }}</small>
+							</div>
+						</div>
 					</div>
 				</a>
-				<small>Written {{ \Carbon\Carbon::parse($post->created_at)->diffForHumans() }}</small>
+				
 				{{-- Who wrote the post (Probably Unnecessary) --}}
 				{{-- 	<small>Written by{{ $post->users->firstname }}</small> --}}
 			</article>

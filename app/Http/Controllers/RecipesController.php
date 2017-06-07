@@ -20,7 +20,7 @@ class RecipesController extends Controller
     {
         //dd('$pageNum is '.$pageNum);
         //throw new Exception();
-        $allRecipePosts = RecipePost::orderBy('created_at','desc')->simplePaginate(9);
+        $allRecipePosts = RecipePost::orderBy('created_at','desc')->paginate(9);
        
         return view('recipes.index', compact('allRecipePosts'));
     }

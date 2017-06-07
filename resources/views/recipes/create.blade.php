@@ -45,7 +45,7 @@
 		<p class="red-text">{{ $errors->first('alt_text') }}</p>
 	@endif
 	<div class="center-align">
-		<input type="submit" class="btn" value="edit new recipes">
+		<input type="submit" class="btn" value="Create Post">
 	</div>
 {!! Form::close() !!}
 
