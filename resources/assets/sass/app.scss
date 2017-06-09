@@ -49,13 +49,6 @@
 
 $primary-color: color #8bc53f !default;
 
-// Card Styling
-// .card {
-// 	background-color: #FFF;
-// 	box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
-// 	box-shadow: 0px 7px 22px 0px rgba(0, 0, 0, 0.2);
-// 	padding: 20px 10px;
-// }
 body{
 	width: 100%;
 }
@@ -285,7 +278,7 @@ h1,h2,h3,h4 {
 }
 // featured Recipe Post
 .post-image {
-	width: 100%;
+	max-width: 100%;
 }
 // Recipe Delete and Edit
 .disp-flex {
@@ -302,7 +295,7 @@ h2 {
 	width: 300px;
 	padding-bottom: 10px;
 	background-color: #e6e6e6;
-
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .centered {
 	text-align: center;
@@ -310,7 +303,10 @@ h2 {
 .card-contain {
 	margin-bottom: 25px;
 }
-
-
-
+.content-pad {
+	padding-bottom: 30px;
+}
+.height-of-cont {
+	min-height: 350px;
+}
 

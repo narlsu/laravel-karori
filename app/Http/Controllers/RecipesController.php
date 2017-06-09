@@ -78,6 +78,7 @@ class RecipesController extends Controller
         
 
         $filename = uniqid() . $fileExtension;
+        $image->fit(800,600);
         // Save Image
         $image->save("images/recipes/$filename");
         // Instantiate and Save Thumbnail of Image
@@ -121,7 +122,7 @@ class RecipesController extends Controller
         //
         //
         // Find the Recipe post to be edited
-        $post    = RecipePost::findOrFail($id);
+        $post = RecipePost::findOrFail($id);
         
         // Show the edit form
         return view('recipes.edit', compact('post'));

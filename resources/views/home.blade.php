@@ -10,7 +10,7 @@
 	<h1 class="center-align">About Us</h1>
 	<div class="row">
 	<div class="card-panel col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-		<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae, sit doloribus quasi deleniti, quidem animi fugiat autem veniam soluta vero ipsum nemo ipsa vel, vitae culpa laborum modi similique!</p>
+		<p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae, sit doloribus quasi deleniti, quidem animi fugiat autem veniam soluta vero ipsum nemo ipsa vel, vitae culpa laborum modi similique!</p>
 	</div>
 	</div>
 	<div class="row">
@@ -40,17 +40,6 @@
                         <div class="panel-heading">You're an Admin</div>
                         <div class="panel-body">
                             <a href="/home/admin" class="btn btn-primary btn-block">Go to Admin Tools</a>
-                        </div>
-                    </div>
-                </div>
-            @endif
-
-            @if(Auth::Check() && Auth::user()->hasRole('meeting manager') )
-                <div class="col-sm-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">You're a Meeting Manager</div>
-                        <div class="panel-body">
-                            <a href="/home/meeting" class="btn btn-primary btn-block">Go to Meeting Manager Tools</a>
                         </div>
                     </div>
                 </div>

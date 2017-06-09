@@ -20,7 +20,7 @@
 			    	@if (Auth::guest())
 			    		<a href="{{ url('/register') }}" class="btn waves-effect white grey-text darken-text-2">Sign Up Today!</a>
 			    	@else
-			    		<a href="{{ url('/crate') }}" class="btn waves-effect white grey-text darken-text-2">Go to your Crate</a>
+
 			    	@endif
 			    </div>
 			    <div class="background-image1 carousel-item c-style" href="#one!">
